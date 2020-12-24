@@ -1,0 +1,22 @@
+.portfolio .figcaption-category {
+  background-color: white;
+  color: gray;
+}
+
+.figcaption-category {
+  border-top: 1px solid white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.delete-button {
+  border: none;
+  background-color: lightblue;
+  border-radius: 0.5em;
+  cursor: pointer;
+}
+
+.delete-button:hover {
+  background-color: rgba(173, 216, 230, 0.5);
+}

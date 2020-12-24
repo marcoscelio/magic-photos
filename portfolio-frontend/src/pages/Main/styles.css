@@ -1,0 +1,32 @@
+.base-fixed-top {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.fixed-top-button {
+  position: fixed;
+  top: 1;
+  margin-left: -2em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-self: flex-end;
+  min-height: 1em;
+  border: 1px solid white;
+  border-radius: 1em;
+  color: white;
+  padding: 1em;
+  background-color: rgba(0, 0, 0, 0.2);
+  z-index: 30;
+  cursor: pointer;
+}
+
+.fixed-top-button span {
+  display: none;
+}
+
+.fixed-top-button:hover {
+  background-color: rgba(211, 211, 211, 0.5);
+  padding: 1.1em;
+}

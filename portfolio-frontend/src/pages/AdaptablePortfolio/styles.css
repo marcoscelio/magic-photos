@@ -1,0 +1,37 @@
+.adaptable {
+  padding-bottom: 2em;
+  width: 100%;
+}
+
+.cursor {
+  cursor: pointer;
+  position: relative;
+}
+
+.overlay {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.3s ease;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.cursor:hover {
+  /* opacity: 0.2; */
+  border: 2px solid lightblue;
+  cursor: zoom-in;
+}
+
+.cursor:hover .overlay {
+  border: 2px solid lightblue;
+  /* transform: scale(1.1); */
+  opacity: 1;
+}

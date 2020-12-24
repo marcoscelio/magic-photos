@@ -1,0 +1,27 @@
+.form-portfolio {
+  margin-bottom: 0.8em;
+}
+
+.form-portfolio h1 {
+  text-align: center;
+}
+
+.container-upload {
+  margin-top: 0.5em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (min-width: 35em) {
+  .container-upload {
+    flex-direction: row;
+  }
+}
+
+.container-upload .flex-row-portfolio {
+  display: flex;
+  flex-direction: row;
+  margin: 0.2em;
+}

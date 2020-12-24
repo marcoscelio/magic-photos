@@ -1,0 +1,62 @@
+.form-opinion {
+  padding: 0 2em;
+}
+
+@media (min-width: 50em) {
+  .form-opinion {
+    padding: 2em 20vw;
+  }
+}
+
+.form-opinion .inner-opinion-row {
+  display: flex;
+  margin: 0.5em;
+}
+
+.form-opinion .inner-opinion-row div {
+  margin: 0 0.5em;
+}
+
+.inner-opinion-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-opinion .opinion-container {
+  text-align: center;
+  width: 100%;
+}
+
+@media (min-width: 50em) {
+  .form-opinion .opinion-container {
+    width: 70%;
+  }
+}
+
+.form-opinion h1 {
+  text-align: center;
+}
+
+/* .form-opinion form label {
+  font-size: 1.2em;
+  color: gray;
+} */
+.form-opinion form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* 
+
+
+
+.form-opinion form textarea {
+  height: 20vw;
+}
+
+@media (min-width: 35em) {
+  .form-opinion form textarea {
+    height: 10vw;
+  }
+} */

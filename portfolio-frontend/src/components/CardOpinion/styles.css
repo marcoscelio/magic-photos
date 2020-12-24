@@ -1,0 +1,56 @@
+.card-opinion {
+  background-color: lightblue;
+}
+
+.card-opinion .cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card-opinion h1 {
+  /* margin-top: 0.5em; */
+  text-align: center;
+}
+
+.card-opinion .opinion {
+  width: 450px;
+  display: flex;
+  flex-direction: column;
+  margin: 0.3em;
+
+  box-shadow: 1px 1px 1px lightgray;
+}
+
+.card-opinion .opinion h4,
+h5,
+p {
+  margin: 0;
+  padding: 0 0.3em;
+}
+
+.card-opinion .opinion h4 {
+  background-color: lightgray;
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-opinion .opinion h5 {
+  text-align: center;
+  font-weight: bold;
+}
+
+.card-opinion .opinion p {
+  border-radius: 0 0 0.3em 0.3em;
+  padding: 1em 2em;
+  min-height: 10vw;
+}
+
+.primary {
+  background-color: yellow;
+  border: 2px solid lightgray;
+}
+
+.primary h5 {
+  border-bottom: 1px solid lightgray;
+}

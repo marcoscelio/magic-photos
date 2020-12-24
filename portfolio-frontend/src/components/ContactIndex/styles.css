@@ -1,0 +1,51 @@
+.contact h1 {
+  text-align: center;
+}
+
+.contact-item {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.item {
+  background-color: lightblue;
+  padding: 0 0 2em 0;
+  margin: 0.5em;
+  max-width: 500px;
+  border-radius: 0.7em;
+}
+
+.secondary {
+  background-color: lightgreen;
+}
+
+.item h4 {
+  background-color: lightgray;
+  display: flex;
+  padding: 0.5em;
+  justify-content: space-between;
+}
+
+.inner-item {
+  padding: 0.5em;
+}
+
+.inner-item .subject-message {
+  border-top: 1px solid black;
+  margin-top: 1em;
+}
+
+.inner-item .subject-message h5 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.inner-item .subject-message p {
+  background-color: white;
+  padding: 0.2em;
+  display: flex;
+  flex-direction: column;
+}

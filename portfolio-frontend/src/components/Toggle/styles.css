@@ -1,0 +1,146 @@
+.menu {
+  position: relative;
+  /* display: flex; */
+  align-items: center;
+}
+
+@media (min-width: 50em) {
+  .menu {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+}
+
+.menu-toggle {
+  position: absolute;
+  /* top: -1.2em; */
+  top: 0.4em;
+  right: 0.5em;
+
+  border: 0;
+  background-color: transparent;
+
+  font-size: 3em;
+  width: 1em;
+  height: 1em;
+  line-height: 0.4em;
+  text-indent: 5em;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.menu-toggle::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: block;
+  content: "\2261";
+  color: black;
+  text-indent: 0;
+}
+
+.menu-dropdown {
+  display: none;
+  position: absolute;
+  right: 0;
+  left: 0;
+  margin: 0;
+  z-index: 15;
+}
+
+@media (min-width: 35em) {
+  .menu-toggle {
+    display: none;
+  }
+
+  .menu-dropdown {
+    flex: 1;
+    display: block;
+    position: static;
+  }
+}
+
+.menu.is-open .menu-dropdown {
+  display: block;
+}
+
+.menu.is-open .nav-menu li {
+  justify-content: center;
+}
+
+.nav-menu {
+  background-color: rgba(0, 0, 0, 0.6);
+  margin: 0;
+  color: white;
+  border: 1px solid black;
+  list-style: none;
+}
+
+.nav-menu li {
+  display: flex;
+}
+
+@media (min-width: 35em) {
+  .nav-menu {
+    color: gray;
+    background-color: white;
+  }
+}
+
+.nav-menu li a {
+  display: flex;
+  align-items: center;
+}
+
+.nav-menu > li + li {
+  border-top: 1px solid #ccc;
+}
+
+.nav-menu > li > a {
+  display: block;
+  padding: 0.8em 1em;
+  font-weight: bold;
+  color: white;
+}
+
+@media (min-width: 35em) {
+  .nav-menu > li > a {
+    color: gray;
+  }
+
+  .nav-menu {
+    display: flex;
+    border: 0;
+    padding: 0 1em;
+    justify-content: space-around;
+  }
+
+  .nav-menu > li + li {
+    border: 0;
+  }
+
+  .nav-menu > li > a {
+    padding: 0.3em;
+    text-align: center;
+  }
+}
+
+@media (min-width: 50em) {
+  .nav-menu {
+    padding: 0 3em;
+  }
+}
+
+.react-icons {
+  color: #fff;
+  size: 18;
+  margin-right: 0.2em;
+}
+
+@media (min-width: 35em) {
+  .react-icons {
+    color: rgba(0, 0, 0, 0.6);
+    size: 22;
+    margin-right: 0.2em;
+  }
+}

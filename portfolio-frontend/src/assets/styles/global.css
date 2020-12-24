@@ -1,0 +1,62 @@
+:root {
+  box-sizing: border-box;
+  font-size: calc(1vw + 0.6em);
+}
+
+@media (min-width: 50em) {
+  :root {
+    font-size: 1.125em;
+  }
+}
+
+*,
+::before,
+::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  font-family: Archivo;
+}
+
+main {
+  min-height: 35vh;
+}
+
+a {
+  color: #333;
+  text-decoration: none;
+}
+
+h1,
+h2 {
+  font-family: Langar;
+}
+
+.buttons-container button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30vw;
+  height: 4em;
+  padding: 0.6em 1.2em;
+  border: 1px solid white;
+  color: white;
+  border-radius: 0.3em;
+  background-color: rgb(124, 204, 231);
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: background-color 0.6s ease;
+  cursor: pointer;
+}
+
+@media (min-width: 35em) {
+  .buttons-container button {
+    width: auto;
+  }
+}
+
+.buttons-container button:hover {
+  background-color: rgb(133, 184, 202);
+}

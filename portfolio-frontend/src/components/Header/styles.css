@@ -1,0 +1,32 @@
+#header a:hover {
+  text-decoration: none;
+  color: gray;
+}
+.page-header {
+  padding: 0.4em 1em;
+}
+
+@media (min-width: 35em) {
+  .page-header {
+    padding: 1em 3em;
+  }
+}
+
+@media (min-width: 50em) {
+  .page-header {
+    padding: 1em 0 1em 7.6em;
+  }
+}
+
+.title > h1 {
+  color: #333;
+  font-size: 1.5em;
+  margin: 0.2em 0;
+  text-align: start;
+}
+
+@media (min-width: 35em) {
+  .title > h1 {
+    font-size: 2.25rem;
+  }
+}

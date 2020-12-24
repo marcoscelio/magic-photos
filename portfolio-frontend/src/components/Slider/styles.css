@@ -1,0 +1,77 @@
+.slider {
+  position: relative;
+  height: 35vw;
+  display: flex;
+  border-top: 2em solid lightgray;
+}
+
+.base-sticky {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  padding: 1em 2em;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.sticky-button {
+  position: sticky;
+  top: 0;
+  display: flex;
+  align-items: center;
+  height: 2em;
+  border: 1px solid white;
+  color: white;
+  padding: 0.5em 2em;
+  background-color: #04d361;
+  border-radius: 5px;
+  z-index: 10;
+}
+
+.sticky-button img {
+  margin-right: 0.4em;
+}
+
+.sticky-button span {
+  display: none;
+}
+
+@media (min-width: 35em) {
+  .sticky-button span {
+    display: block;
+  }
+}
+
+.slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: 0.5s ease;
+}
+
+.slide h1 {
+  color: white;
+  text-shadow: 2px 2px 1px #000;
+  text-align: center;
+  padding: 5vw;
+}
+
+.slide.active {
+  opacity: 1;
+}
+
+.image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}

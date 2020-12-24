@@ -1,0 +1,31 @@
+.carousel {
+  text-align: center;
+  min-height: 35vw;
+}
+
+.carousel::after {
+  content: "";
+  background-image: url("./img/slide-example.jpg");
+  opacity: 0.6;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+}
+
+.carousel h2 {
+  margin-top: 2em;
+  /* text-shadow: 1px 1px 1px gray; */
+}
+
+.carousel h4 {
+  padding: 1em 2em;
+  font-style: italic;
+}
+
+.carousel h5 {
+  text-transform: uppercase;
+  font-weight: bold;
+}
